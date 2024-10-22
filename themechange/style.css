@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 70px;
+    align-items: center;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+
+}
+
+.navbar h1{
+    font-size: 30px;
+}
+
+.navbar ul li{
+    font-size:17px;
+}
+
+.navbar .theme-icon i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    min-height: 87.9vh;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 0 50px;
+}
+.hero-text h1{
+    font-size: 45px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hero-text a{
+    border: 2px solid black;
+    width: fit-content;
+    color: black;
+    padding: 12px 35px;
+    border-radius: 10px;
+}
+
+
+.hero-section .hero-img{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+
+   
+}
+
+.hero-section .hero-img img{
+    width: 75%;
+    border-radius: 10px;
+    
+}
+
+.nav-links ul i{
+    display: none;
+}
+
+
+
+.menu i{
+    display: none;
+}
+
+@media(max-width:570px){
+    .navbar .nav-links ul{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background: black;
+        color: rgb(244, 225, 114);
+        min-height: 100vh;
+        width: 200px;
+        z-index: 1;
+
+    }
+
+    .navbar .nav-links ul i{
+        font-size: 25px;
+        display: initial;
+        
+    }
+    .menu i{
+        display: initial;
+        position: fixed;
+        left: 85%;
+        top: 90%;
+        font-size: 25px;
+        border: 2px solid solid black;
+        padding: 3px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

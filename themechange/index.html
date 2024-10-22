@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme web</title>
+    <!-- Custom css web -->
+     <link rel="stylesheet" href="./style.css">
+
+     <!-- fontawesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="section">
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+
+                <div class="nav-links">
+                    <ul id="side-bar">
+                        <i class="fa-solid fa-xmark" onclick="MenuClose()"></i>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Service</li>
+                        <li>Contact</li>
+                        <li>Blog</li> 
+                    </ul>
+                </div>
+
+                <div class="theme-icon" title="change theme" >
+                    <i class="fa-regular fa-moon"  onclick="themeChange();toggleIcon(this);" ></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+         <main>
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quaerat libero ad dicta! Necessitatibus aliquam ad quas ipsum ipsam perspiciatis?</p>
+                    <a href="" id="btn">Explore Now</a>
+
+                </div>
+
+                <div class="hero-img">
+                    <img src="/images/ghost.jpg" alt="">
+                </div> 
+            </div>
+
+         </main>
+
+         <div class="menu">
+            <i class="fa-solid fa-bars" onclick="MenuOp()"></i>
+         </div>
+    </section>
+    
+
+    <!-- custom js -->
+     <script src="./script.js"></script>
+</body>
+</html>
